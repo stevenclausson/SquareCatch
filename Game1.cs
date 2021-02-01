@@ -57,7 +57,7 @@ namespace SquareCatch
             {
                 playerScore++;
                 timeRemaining = 0.0f;
-
+                timePerSquare = timePerSquare - 0.1f;
             }
             timeRemaining = MathHelper.Max(0, timeRemaining - (float)gameTime.ElapsedGameTime.TotalSeconds);
             this.Window.Title = "Score: " + playerScore.ToString();
